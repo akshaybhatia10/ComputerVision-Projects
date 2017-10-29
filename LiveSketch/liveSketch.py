@@ -1,15 +1,15 @@
 import cv2
 import numpy as np
 
-def sketch(img):
+def sketch(frame):
 	'''
 	Generate sketch given an image
-	@paramaters: img 
+	@paramaters: frame 
 	'''
-	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 	gray_blur = cv2.GaussianBlur(gray, (5,5), 0)
 	edges = cv2.Canny(gray_blur, 10, 70)
-	ret, mask = cv2.threshold(edges, 70, 255, cv2.THRESH_BINARY_INV)
+	ret, mask = cv2.threshold(edges, 100, 255, cv2.THRESH_BINARY_INV)
 	return mask
 
 
