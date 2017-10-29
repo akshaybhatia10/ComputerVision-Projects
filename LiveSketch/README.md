@@ -10,3 +10,6 @@ Adaptive Thresholding
 
 Other Examples
 ![Screenshot](https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/LiveSketch/More%20examples.png?raw=true "Other Examples" =250x250)
+
+
+<img src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/LiveSketch/Example-Normal%20Threshold.png" alt="" data-canonical-src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/LiveSketch/Example-Normal%20Threshold.png" width="250" height="250" />
