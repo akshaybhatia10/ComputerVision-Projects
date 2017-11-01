@@ -1,11 +1,10 @@
 import cv2
 import numpy as np
-cv2.ocl.setUseOpenCL(False)
 
 class od_SIFT(object):
-	"""
-    Object Detection using SIFT
-	"""
+	'''
+    Object Detection using SIFT (Scale-Invariant Feature Transform)
+	'''
 	def __init__(self, original_image, template):
 		self.original_image = original_image
 		self.template = template
@@ -31,7 +30,8 @@ class od_SIFT(object):
 		search_param = dict(checks = 100)		
 
 		flann = cv2.FlannBasedMatcher(index_param, search_param)
-		d1, d2 = None, None
+		#d1, d2 = None, None
+		
 		# getting all matches using kNN
 		matches = flann.knnMatch(d1, d2, k = 2)
 
