@@ -10,8 +10,11 @@ This project files requires **Python 3** and the following Python libraries inst
 
 Following are some links to install OpenCV and dlib on mac, windows and linux:
 
-[OpenCV](https://github.com/opencv/opencv) - [mac](https://www.learnopencv.com/install-opencv3-on-macos/) | [windows](https://www.learnopencv.com/install-opencv3-on-windows/) | [Ubuntu](https://www.learnopencv.com/install-opencv3-on-ubuntu/)
-[dlib](https://github.com/davisking/dlib) -   [mac](https://www.learnopencv.com/install-dlib-on-macos/) | [windows](https://www.learnopencv.com/install-dlib-on-windows/) | [Ubuntu](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/)
+
+[OpenCV](https://github.com/opencv/opencv) - [Mac](https://www.learnopencv.com/install-opencv3-on-macos/) | [Windows](https://www.learnopencv.com/install-opencv3-on-windows/) | [Ubuntu](https://www.learnopencv.com/install-opencv3-on-ubuntu/)
+
+
+[Dlib](https://github.com/davisking/dlib) -   [Mac](https://www.learnopencv.com/install-dlib-on-macos/) | [Windows](https://www.learnopencv.com/install-dlib-on-windows/) | [Ubuntu](https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/)
 
 
 ### Run
@@ -19,8 +22,6 @@ Following are some links to install OpenCV and dlib on mac, windows and linux:
 ```bash
 python {file_name}.py
 ```  
-
-This will open the Jupyter Notebook software and project file in your browser.
 
 ## About
 
