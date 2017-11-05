@@ -7,7 +7,29 @@
 
 Download the shape detector file from [here](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
 
-## Some Results
+## Some Results of Swapped Faces
+
+
+### Lionel Messi and Cristiano Ronaldo
+
+<img src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/RSM.jpg" alt="" data-canonical-src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/RSM.jpg" width="300" height="400" />
+
+
+<img src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/MSR.jpg" alt="" data-canonical-src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/RSM.jpg" width="300" height="400" />
+
+
+
+### Donald Trump and Kim Jong Un
+
+<img src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/TSK.jpg" alt="" data-canonical-src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/RSM.jpg" width="300" height="400" />
+
+
+<img src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/KST.jpg" alt="" data-canonical-src="https://github.com/akshaybhatia10/ComputerVison-Projects/blob/master/FaceSwapper/RSM.jpg" width="300" height="400" />
+
+
+
+## Some Results of Landmarks Identified
+
 
 Example 1
 
