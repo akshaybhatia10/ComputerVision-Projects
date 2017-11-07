@@ -71,7 +71,7 @@ def check_mouth(image):
 		
 
 capture = cv2.VideoCapture(0)
-count = 0
+count = -1
 current = False
 
 while True:
@@ -80,13 +80,13 @@ while True:
 	previous = current
 	if mouth_distance > 25:
 		current = True
-		cv2.putText(frame, "Please do not YAWN", (50,50), cv2.FONT_ITALIC, 1, (0,0,0),2)
-		cv2.putText(frame, "Now at: {}".format(str(count+1)), (50,100), cv2.FONT_ITALIC, 1, (0,0,0), 1)
+		cv2.putText(frame, "Still YAWNING", (50,50), cv2.FONT_ITALIC, 2, (0,0,0), 3)
 	else:
 		current = False
 	if previous == True and current == False:
 		count += 1
 
+	cv2.putText(frame, "You have yawned {} times".format(str(count+1)), (50,100), cv2.FONT_ITALIC, 1, (0,0,0), 2)	
 	#frame = cv2.resize(frame, None, fx=0.45, fy=0.45, interpolation=cv2.INTER_LINEAR)
 	cv2.imshow('Landmarks', landmarks)
 	cv2.imshow('Yawn Detector', frame)
