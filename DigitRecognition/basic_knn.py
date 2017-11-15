@@ -15,13 +15,12 @@ cv2.imshow("Orignal Data", resized)
 
 arr = [np.hsplit(i, 100) for i in np.vsplit(gray, 50)]
 arr = np.array(arr)
-print (arr[0])
 print ("Resulting Shape", arr.shape)
 
 # Spliting into training and test set
 # Total: 5000, Train: 3500 images, Test: 1500
-X_train = arr[:, :70].reshape(-1, 400).astype(np.float)
-X_test = arr[:, 70:100].reshape(-1, 400).astype(np.float)
+X_train = arr[:, :70].reshape(-1, 400).astype(np.float32)
+X_test = arr[:, 70:100].reshape(-1, 400).astype(np.float32)
 print ("input shapes\n-->Train: {}, Test: {}".format(X_train.shape, X_test.shape))
 
 ## Targets for each image
@@ -32,9 +31,9 @@ y_test = np.repeat(y, 150)[:, np.newaxis]
 print ("target shapes\n-->Train: {}, Test: {}".format(y_train.shape, y_test.shape))
 
 # Using K-NN(k- nearest neighbors) as the ML algorithm
-classifier_knn = cv2.KNearest()
-classifier_knn.train(X_train, y_train)
-response, result, neighbors, distance = classifier_knn.find_nearest(X_test, k=3)
+classifier_knn = cv2.ml.KNearest_create()
+classifier_knn.train(X_train, cv2.ml.ROW_SAMPLE, y_train)
+response, result, neighbours, distance = classifier_knn.findNearest(X_test, k=3)
 
 # Testing and calculating the accuracy of knn classifier
 correct = result == y_test
