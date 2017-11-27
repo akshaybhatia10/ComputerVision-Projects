@@ -13,7 +13,7 @@ cropped = frame[track[0]:track[0]+track[1], track[2]:track[2]+track[3]]
 # BGR to HSV
 cropped_hsv = cv2.cvtColor(cropped, cv2.COLOR_BGR2HSV)
 
-color_range = [[0,0,0], [0,0,255]]
+color_range = [[0,0,128],[0,0,255]]
 
 # filter values between the specified range
 filter_mask = cv2.inRange(cropped_hsv, np.array(color_range[0]), np.array(color_range[1]))
@@ -29,6 +29,7 @@ finish = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 1)
 
 while True:
 	response, frame = capture.read()
+	frame = cv2.flip(frame, 1)
 
 	if response == True:
 		hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
